@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function uKnowMe() {
+            const a = document.getElementById("no1").value;
+            const b = document.getElementById("no2").value;
+            const me = document.getElementById("finalSum");
+            me.innerHTML = parseInt(a) + parseInt(b) ;
+        }
+    </script>
+</head>
+<body style="background-color: aquamarine;">
+    <br>
+    <input id="no1" type="text" placeholder="first number" style="color: rgb(94, 170, 228); font-weight: bold;"><br> <br>
+    <input id="no2" type="text" placeholder="second number" style="color: rgb(94, 170, 228); font-weight: bold;"><br> <br>
+    <button onclick="uKnowMe()">Calculate Sum</button><br> <br>
+    <div id="finalSum" style="color: chocolate; font-size: large; font-weight: bolder; font-family: sans-serif;"></div>
+    </div>
+</body>
+</html>
